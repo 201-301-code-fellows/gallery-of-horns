@@ -6,8 +6,10 @@ export default class HornedBeast extends Component {
       <>
 
         <h2>{this.props.data.title}</h2>
-        <img className={styles.image} src={this.props.data.image_url} alt={this.props.data.title} title={this.props.data.title}></img>
-        <p>{this.props.data.description}</p>
+        <figure>
+          <img className={styles.image} src={this.props.data.image_url} alt={this.props.data.title} title={this.props.data.title}></img>
+          <p>{this.props.data.description}</p>
+        </figure>
       </>
     )
   }

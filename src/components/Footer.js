@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
   render() {
     return (
-      <p>Lewis Benson</p>
+      <footer>
+        <p>Lewis Benson</p>
+      </footer>
     )
   }
 }
