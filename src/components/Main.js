@@ -3,10 +3,12 @@ import HornedBeast from './HornedBeast'
 export default class Main extends Component {
   render() {
     return (
-      <>
-        <HornedBeast />
-        <HornedBeast />
-      </>
+
+
+      this.props.data.map((hornedBeastData) => {
+        return <HornedBeast key={hornedBeastData.id} data={hornedBeastData} />
+      })
+
     )
   }
 }
