@@ -4,11 +4,11 @@ export default class Main extends Component {
   render() {
     return (
 
+      <main>
+        {this.props.data.map((hornedBeastData) => {
+          return <HornedBeast key={hornedBeastData.id} data={hornedBeastData} />
+        })}
 
-      this.props.data.map((hornedBeastData) => {
-        return <HornedBeast key={hornedBeastData.id} data={hornedBeastData} />
-      })
-
-    )
+      </main>)
   }
 }
