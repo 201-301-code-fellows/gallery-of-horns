@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import styles from './HornedBeasts.module.css'
 export default class HornedBeast extends Component {
+
   render() {
+    
     return (
       <>
 
