@@ -1,8 +1,15 @@
-.image{
-  width: 400px;
+.card{
+  margin: 20px;
+  width: 40rem;
+  height: 40rem;
 }
 
-h2 {
-  margin-top: 40px;
-  font-size: 1.5rem;
+.card-footer.button{
+  background-color: rgb(18, 205, 18);
+}
+
+.card-footer{
+  display:flex;
+  justify-content: space-between;
+  background-color: transparent;
 }

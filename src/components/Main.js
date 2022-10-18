@@ -6,7 +6,7 @@ export default class Main extends Component {
 
       <main>
         {this.props.data.map((hornedBeastData) => {
-          return <HornedBeast key={hornedBeastData.id} data={hornedBeastData} />
+          return <HornedBeast key={hornedBeastData._id} data={hornedBeastData} />
         })}
 
       </main>)
