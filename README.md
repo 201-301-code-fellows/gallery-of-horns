@@ -11,23 +11,23 @@ Actual time needed to complete: 15 minutes
 
 Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 1620
 
-Finish time: _____
+Finish time: 1630
 
-Actual time needed to complete: _____
+Actual time needed to complete: 10 minutes
 /*                                 */
 Number and name of feature: Feature 3: Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 10 minutes
 
-Start time: _____
+Start time: 1615
 
-Finish time: _____
+Finish time: 1620
 
-Actual time needed to complete: _____
+Actual time needed to complete: 5 minutes
 
 # Getting Started with Create React App
 
