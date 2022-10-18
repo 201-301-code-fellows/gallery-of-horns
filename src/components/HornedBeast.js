@@ -27,8 +27,8 @@ export default class HornedBeast extends Component {
               {this.props.data.description}
             </Card.Text>
             <footer className={styles['card-footer']}>
-            <Button onClick={this.handleClick} variant="primary" className={styles.button}>Click to Vote</Button>
-            <h3>Total Votes: {this.state.counter}</h3>
+              <Button onClick={this.handleClick} variant="primary" className={styles.button}>Click to Vote</Button>
+              <h3>{!this.state.counter ? '' : 'Total Votes: ❤️' + this.state.counter}</h3>
             </footer>
           </Card.Body>
         </Card>
