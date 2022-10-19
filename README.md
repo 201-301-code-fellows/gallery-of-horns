@@ -1,3 +1,15 @@
+## Day 2 Tuesday
+Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 1500
+
+Finish time: 1615
+
+Actual time needed to complete: 15 minutes
+
+## Day 1 Monday
 Number and name of feature: Feature #1: Display images
 
 Estimate of time needed to complete: 1 Hour
