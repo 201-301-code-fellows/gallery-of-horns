@@ -1,7 +1,13 @@
 .card{
   margin: 20px;
-  width: 40rem;
+  width: 23rem;
   height: 40rem;
+  
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-footer.button{
@@ -12,4 +18,29 @@
   display:flex;
   justify-content: space-between;
   background-color: transparent;
+}
+
+.button{
+  width:100%;
+}
+
+@media (min-width: 849px){
+  .button{
+    width: 50%;
+  }
+
+  .card{
+    margin: 10px;
+    width: 25rem;
+    min-height: 35rem;
+
+  }
+
+  .horned-img{
+
+    max-height: 300px;
+    object-fit: scale-down;
+
+  }
+
 }

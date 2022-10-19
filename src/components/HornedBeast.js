@@ -20,8 +20,8 @@ export default class HornedBeast extends Component {
       <>
 
         <Card className={styles.card}>
-          <Card.Img variant="top" alt={this.props.data.title} src={this.props.data.image_url} />
-          <Card.Body>
+          <Card.Img className={styles['horned-img']} variant="top" alt={this.props.data.title} src={this.props.data.image_url} />
+          <Card.Body className={styles['card-body']}>
             <Card.Title>{this.props.data.title}</Card.Title>
             <Card.Text>
               {this.props.data.description}
