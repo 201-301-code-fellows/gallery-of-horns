@@ -6,20 +6,46 @@ export default class SelectedBeast extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false
+      show: false,
+      title: '',
+      alt: '',
+      src: '',
+
     }
   }
 
-  handleClose = () => this.setState(() => ({ show: false }))
-  handleShow = () => this.setState(() => ({ show: true }))
-  render() {
-    return (
+  handleClose = () => {
+    this.setState(() => ({ show: false }), this.props.onCloseModal)
 
-      <Modal show={this.state.show} onHide={this.handleClose}>
+  }
+
+  componentDidUpdate() {
+    if (this.props.show && !this.state.show) {
+      this.setState({ show: true });
+    }
+
+    if (this.props.showBeast[0].title !== this.state.alt) {
+      this.setState({
+        title: this.props.showBeast[0].title,
+        src: this.props.showBeast[0].image_url,
+        alt: this.props.showBeast[0].title
+      })
+
+    }
+
+  }
+
+
+
+  render() {
+
+    return (
+      <Modal show={this.props.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{this.props.data[0].title}</Modal.Title>
+          <Modal.Title>{this.state.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body><Card.Img variant="top" alt={this.props.data[0].title} src={this.props.data[0].image_url} /></Modal.Body>
+        <Modal.Body><Card.Img variant="top" alt={this.state.title} src={this.state.src} /></Modal.Body>
+
       </Modal>
     )
   }
