@@ -1,3 +1,14 @@
+## Day 3 thursday
+Number and name of feature: Feature #1: Filter Dropdown 
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 1600
+
+Finish time: 1645
+
+Actual time needed to complete: 45 minutes
+
 ## Day 2 wednesday
 Number and name of feature: Feature #1: Display a Modal
 
@@ -13,7 +24,6 @@ Actual time needed to complete: 4 hours
 Number and name of feature: Feature #1: Display images
 
 Estimate of time needed to complete: 1 Hour
-
 Start time: 1600
 
 Finish time: 1615

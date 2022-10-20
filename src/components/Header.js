@@ -27,6 +27,7 @@ export default class Header extends Component {
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
+            <option value="100">Hundred</option>
           </Form.Select>
         </div>
       </nav>
