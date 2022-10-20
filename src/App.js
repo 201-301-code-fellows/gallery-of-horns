@@ -11,7 +11,8 @@ export default class App extends Component {
     super()
     this.state = {
       show: false,
-      alt: ''
+      alt: '',
+      selection: ''
     }
   }
   changeShow = (alt) => {
@@ -28,12 +29,23 @@ export default class App extends Component {
   }
 
 
+  filterChange = (selection) => {
+    this.setState({
+      selection: selection,
+      alt: data[0].title,
+      title: data[0].title
+    })
+  }
+
+
+
   render() {
+
     return (
       <>
-        <Header />
+        <Header onSelectFilter={this.filterChange} />
         <SelectedBeast onCloseModal={this.changeClose} showBeast={data.filter(item => item.title === this.state.alt)} show={this.state.show} data={data} />
-        <Main changeShow={this.changeShow} className={styles.main} data={data} />
+        <Main numberOfHorns={this.state.selection} changeShow={this.changeShow} className={styles.main} data={data} />
 
         <Footer className={styles['page-footer']} />
       </>
