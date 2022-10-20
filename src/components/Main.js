@@ -16,16 +16,20 @@ export default class Main extends Component {
     })
   }
 
-
-
-
   render() {
+
     return (
 
       <main>
         {this.props.data.map((hornedBeastData) => {
-          
+
           return <HornedBeast onWhichClicked={this.whichClickedHandle} key={hornedBeastData._id} data={hornedBeastData} />
+
+        }).filter((items) => {
+          if (!this.props.numberOfHorns.selection) {
+            return items;
+          }
+          return Number(this.props.numberOfHorns.selection) === items.props.data.horns
         })}
 
       </main>)
